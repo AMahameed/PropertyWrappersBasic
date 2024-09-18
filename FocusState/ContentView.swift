@@ -14,29 +14,37 @@ struct ContentView: View {
 
     @State private var username = ""
     @State private var password = ""
+    @State private var isDraggbleCirclePresented = false
     @FocusState private var focusedField: Field?
 
     var body: some View {
-        VStack {
-            TextField("Username", text: $username)
-                .focused($focusedField, equals: .username)  // Bind focus to username
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            SecureField("Password", text: $password)
-                .focused($focusedField, equals: .password)  // Bind focus to password
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            Button("Log In") {
-                if username.isEmpty {
-                    focusedField = .username  // Programmatically set focus
-                } else if password.isEmpty {
-                    focusedField = .password
+        NavigationStack {
+            VStack {
+                TextField("Username", text: $username)
+                    .focused($focusedField, equals: .username)  // Bind focus to username
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                SecureField("Password", text: $password)
+                    .focused($focusedField, equals: .password)  // Bind focus to password
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                Button("Log In") {
+                    if username.isEmpty {
+                        focusedField = .username  // Programmatically set focus
+                    } else if password.isEmpty {
+                        focusedField = .password
+                    } else {
+                        isDraggbleCirclePresented = true
+                    }
+                }
+                .navigationDestination(isPresented: $isDraggbleCirclePresented) {
+                    DraggableCircle()
                 }
             }
+            .padding()
         }
-        .padding()
     }
 }
 

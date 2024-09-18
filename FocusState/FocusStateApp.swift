@@ -11,7 +11,7 @@ import SwiftUI
 struct FocusStateApp: App {
     var body: some Scene {
         WindowGroup {
-            MatchedGeometryView()
+            ContentView()
         }
     }
 }

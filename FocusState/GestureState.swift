@@ -10,6 +10,8 @@ import SwiftUI
 struct DraggableCircle: View {
     @GestureState private var dragOffset = CGSize.zero
     @State private var position = CGSize.zero
+    
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         Circle()
@@ -26,6 +28,14 @@ struct DraggableCircle: View {
                         position.height += value.translation.height
                     }
             )
+        
+        Button {
+            dismiss()
+        } label: {
+            Text("dismiss")
+                .foregroundStyle(.black)
+        }
+
     }
 }
 
