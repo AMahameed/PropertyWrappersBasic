@@ -12,6 +12,7 @@
 		CE78F5F02C9ADB450059E5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE78F5EF2C9ADB450059E5E1 /* Assets.xcassets */; };
 		CE78F5F32C9ADB450059E5E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE78F5F22C9ADB450059E5E1 /* Preview Assets.xcassets */; };
 		CE78F5FA2C9ADF280059E5E1 /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78F5F92C9ADF280059E5E1 /* NameSpace.swift */; };
+		CE78F5FC2C9AE38E0059E5E1 /* GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78F5FB2C9AE38E0059E5E1 /* GestureState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CE78F5EF2C9ADB450059E5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE78F5F22C9ADB450059E5E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE78F5F92C9ADF280059E5E1 /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
+		CE78F5FB2C9AE38E0059E5E1 /* GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				CE78F5EB2C9ADB440059E5E1 /* FocusStateApp.swift */,
 				CE78F5ED2C9ADB440059E5E1 /* ContentView.swift */,
 				CE78F5F92C9ADF280059E5E1 /* NameSpace.swift */,
+				CE78F5FB2C9AE38E0059E5E1 /* GestureState.swift */,
 				CE78F5EF2C9ADB450059E5E1 /* Assets.xcassets */,
 				CE78F5F12C9ADB450059E5E1 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE78F5FA2C9ADF280059E5E1 /* NameSpace.swift in Sources */,
+				CE78F5FC2C9AE38E0059E5E1 /* GestureState.swift in Sources */,
 				CE78F5EE2C9ADB440059E5E1 /* ContentView.swift in Sources */,
 				CE78F5EC2C9ADB440059E5E1 /* FocusStateApp.swift in Sources */,
 			);
